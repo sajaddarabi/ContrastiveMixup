@@ -1,0 +1,142 @@
+{
+    "name": "mnist",
+    "n_gpu": 1,
+    "unsupervised_arch": {
+        "type": "AE",
+        "args": {
+            "input_dim": 784,
+            "hidden_dim": [
+                784
+            ],
+            "mixup_method": "mixup",
+            "projection_head": "mlp",
+            "projection_dim": 784,
+            "temperature": 0.1,
+            "embed": true,
+            "mixup_alpha": 0.2,
+            "mixup_dist": "uniform",
+            "mixup_n": -1
+        }
+    },
+    "unsupervised_lr_scheduler": {
+        "type": "StepLR",
+        "args": {
+            "step_size": 10,
+            "gamma": 0.1
+        }
+    },
+    "unsupervised_metrics": [],
+    "unsupervised_optimizer": {
+        "type": "RMSprop",
+        "args": {
+            "lr": 0.001,
+            "alpha": 0.9,
+            "momentum": 0.0,
+            "eps": 1e-07
+        }
+    },
+    "unsupervised_data_loader": {
+        "type": "KerasMNISTDataLoader",
+        "args": {
+            "batch_size": 128,
+            "labeled_ratio": 0.1,
+            "method": "semisupervised",
+            "shuffle": true,
+            "validation_split": 0.1,
+            "num_workers": 2
+        }
+    },
+    "unsupervised_trainer": {
+        "type": "Trainer",
+        "module_name": "trainer",
+        "epochs": 20,
+        "save_dir": "saved/",
+        "save_period": 10,
+        "verbosity": 2,
+        "monitor": "min val_loss",
+        "early_stop": 1000,
+        "save_single_checkpoint": true,
+        "save_only_best": true,
+        "tensorboard": false,
+        "log_step": 50,
+        "pseudolabeling": {
+            "epoch_start": 10,
+            "f": 2,
+            "args": {
+                "k": 3,
+                "max_iter": 20,
+                "alpha": 0.99
+            }
+        }
+    },
+    "supervised_arch": {
+        "type": "MLP",
+        "args": {
+            "input_dim": 784,
+            "hidden_dim": [
+                100,
+                100
+            ],
+            "num_classes": 10,
+            "mixup_method": "mixup",
+            "mixup_alpha": 2.0,
+            "mixup_dist": "alpha",
+            "mixup_n": -1,
+            "K": 5,
+            "fine_tune": false
+        }
+    },
+    "supervised_data_loader": {
+        "type": "KerasMNISTDataLoader",
+        "args": {
+            "batch_size": 128,
+            "labeled_ratio": 0.1,
+            "shuffle": true,
+            "validation_split": 0.1,
+            "num_workers": 2,
+            "method": "semisupervised"
+        }
+    },
+    "supervised_optimizer": {
+        "type": "Adam",
+        "args": {
+            "lr": 0.001,
+            "weight_decay": 0,
+            "amsgrad": false
+        }
+    },
+    "supervised_metrics": [
+        "accuracy"
+    ],
+    "supervised_lr_scheduler": {
+        "type": "StepLR",
+        "args": {
+            "step_size": 30,
+            "gamma": 0.1
+        }
+    },
+    "loss_args": {
+        "cont_loss_type": "mse",
+        "contrastive_weight": 0.75,
+        "l2_weight_decoder": 0.01,
+        "mixup_weight_decoder": 0.0,
+        "recon_weight": 0.25
+    },
+    "supervised_trainer": {
+        "type": "Trainer",
+        "module_name": "trainer",
+        "epochs": 50,
+        "save_dir": "saved/",
+        "save_period": -1,
+        "verbosity": 2,
+        "monitor": "max val_accuracy",
+        "early_stop": 50,
+        "save_single_checkpoint": true,
+        "validation_target": false,
+        "save_only_best": true,
+        "tensorboard": false,
+        "log_step": 50
+    },
+    "unsupervised_model_load_best": false,
+    "supervised_model_load_best": true
+}

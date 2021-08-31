@@ -1,0 +1,67 @@
+{
+    "name": "mnist",
+    "n_gpu": 1,
+    "supervised_arch": {
+        "type": "MLP",
+        "args": {
+            "input_dim": 784,
+            "hidden_dim": [100, 100],
+            "num_classes": 10,
+            "method": ""
+        }
+    },
+    "unsupervised_metrics":[],
+    "supervised_optimizer": {
+        "type": "Adam",
+        "args": {
+            "lr": 0.001,
+            "weight_decay": 0,
+            "amsgrad": true
+        }
+    },
+    "supervised_data_loader": {
+        "type": "KerasMNISTDataLoader",
+        "args": {
+            "data_dir": "./data/MNISTDataset",
+            "batch_size": 100,
+            "labeled_ratio": 0.1,
+            "shuffle": true,
+            "validation_split": 0.10,
+            "num_workers": 8
+            }
+    },
+    "supervised_optimizer": {
+        "type": "Adam",
+        "args": {
+            "lr": 0.0010939661837841578,
+            "weight_decay": 0,
+            "amsgrad": true
+        }
+    },
+    "supervised_metrics": ["accuracy"],
+    "supervised_lr_scheduler": {
+        "type": "StepLR",
+        "args": {
+            "step_size": 100,
+            "gamma": 0.1
+        }
+    },
+    "loss_args":{
+        "cont_loss_type": "mse",
+        "contrastive_weight": 0.1
+    },
+    "supervised_trainer": {
+        "type": "Trainer",
+        "module_name": "trainer",
+        "epochs": 25,
+        "save_dir": "saved/",
+        "save_period": 10,
+        "verbosity": 2,
+        "monitor": "min val_loss",
+        "early_stop": 50,
+        "save_single_checkpoint": true,
+        "save_only_best": true,
+        "tensorboard": false,
+        "log_step": 50
+    }
+}

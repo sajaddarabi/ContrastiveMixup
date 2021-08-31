@@ -1,0 +1,224 @@
+2021-08-24 20:56:02,776 - train - INFO - LogisticRegression(
+  (embeddings): EmbeddingGenerator()
+  (encoder): ModuleList(
+    (0): EmbeddingGenerator()
+    (1): Linear(in_features=784, out_features=10, bias=True)
+  )
+  (criterion_softmax): CrossEntropyLoss()
+  (criterion_mixup): BCELoss()
+)
+Trainable parameters: 7850
+2021-08-24 20:56:02,827 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2021-08-24 20:56:02,828 - faiss.loader - INFO - Loading faiss.
+2021-08-24 20:56:07,017 - supervised_trainer - INFO -     epoch          : 1
+2021-08-24 20:56:07,017 - supervised_trainer - INFO -     loss           : 1.6436553167413783
+2021-08-24 20:56:07,017 - supervised_trainer - INFO -     accuracy       : 0.6116666666666667
+2021-08-24 20:56:07,017 - supervised_trainer - INFO -     val_loss       : 1.1465118217468262
+2021-08-24 20:56:07,018 - supervised_trainer - INFO -     val_accuracy   : 0.8
+2021-08-24 20:56:07,018 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:07,023 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:07,946 - supervised_trainer - INFO -     epoch          : 2
+2021-08-24 20:56:07,947 - supervised_trainer - INFO -     loss           : 0.9299904216660394
+2021-08-24 20:56:07,947 - supervised_trainer - INFO -     accuracy       : 0.8077777777777778
+2021-08-24 20:56:07,947 - supervised_trainer - INFO -     val_loss       : 0.7896141656239828
+2021-08-24 20:56:07,947 - supervised_trainer - INFO -     val_accuracy   : 0.8483333333333334
+2021-08-24 20:56:07,947 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:07,949 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:08,890 - supervised_trainer - INFO -     epoch          : 3
+2021-08-24 20:56:08,891 - supervised_trainer - INFO -     loss           : 0.700550094180637
+2021-08-24 20:56:08,891 - supervised_trainer - INFO -     accuracy       : 0.8438888888888889
+2021-08-24 20:56:08,891 - supervised_trainer - INFO -     val_loss       : 0.6442172853151957
+2021-08-24 20:56:08,891 - supervised_trainer - INFO -     val_accuracy   : 0.855
+2021-08-24 20:56:08,892 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:08,894 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:09,872 - supervised_trainer - INFO -     epoch          : 4
+2021-08-24 20:56:09,872 - supervised_trainer - INFO -     loss           : 0.5887841096630803
+2021-08-24 20:56:09,872 - supervised_trainer - INFO -     accuracy       : 0.8594444444444445
+2021-08-24 20:56:09,872 - supervised_trainer - INFO -     val_loss       : 0.5634664114316305
+2021-08-24 20:56:09,872 - supervised_trainer - INFO -     val_accuracy   : 0.8683333333333333
+2021-08-24 20:56:09,873 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:09,875 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:10,789 - supervised_trainer - INFO -     epoch          : 5
+2021-08-24 20:56:10,790 - supervised_trainer - INFO -     loss           : 0.5200358528561062
+2021-08-24 20:56:10,790 - supervised_trainer - INFO -     accuracy       : 0.8759259259259259
+2021-08-24 20:56:10,790 - supervised_trainer - INFO -     val_loss       : 0.512581824461619
+2021-08-24 20:56:10,790 - supervised_trainer - INFO -     val_accuracy   : 0.88
+2021-08-24 20:56:10,791 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:10,793 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:11,730 - supervised_trainer - INFO -     epoch          : 6
+2021-08-24 20:56:11,730 - supervised_trainer - INFO -     loss           : 0.4747775211157622
+2021-08-24 20:56:11,731 - supervised_trainer - INFO -     accuracy       : 0.8840740740740741
+2021-08-24 20:56:11,733 - supervised_trainer - INFO -     val_loss       : 0.47482714454332986
+2021-08-24 20:56:11,733 - supervised_trainer - INFO -     val_accuracy   : 0.8833333333333333
+2021-08-24 20:56:11,733 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:11,735 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:12,692 - supervised_trainer - INFO -     epoch          : 7
+2021-08-24 20:56:12,693 - supervised_trainer - INFO -     loss           : 0.44075068054375827
+2021-08-24 20:56:12,693 - supervised_trainer - INFO -     accuracy       : 0.8911111111111111
+2021-08-24 20:56:12,693 - supervised_trainer - INFO -     val_loss       : 0.4489927363395691
+2021-08-24 20:56:12,693 - supervised_trainer - INFO -     val_accuracy   : 0.8866666666666667
+2021-08-24 20:56:12,694 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:12,696 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:13,634 - supervised_trainer - INFO -     epoch          : 8
+2021-08-24 20:56:13,634 - supervised_trainer - INFO -     loss           : 0.41464841930954544
+2021-08-24 20:56:13,634 - supervised_trainer - INFO -     accuracy       : 0.8944444444444445
+2021-08-24 20:56:13,634 - supervised_trainer - INFO -     val_loss       : 0.4277663977940877
+2021-08-24 20:56:13,635 - supervised_trainer - INFO -     val_accuracy   : 0.8883333333333333
+2021-08-24 20:56:13,635 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:13,637 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:14,566 - supervised_trainer - INFO -     epoch          : 9
+2021-08-24 20:56:14,566 - supervised_trainer - INFO -     loss           : 0.39389887191631173
+2021-08-24 20:56:14,567 - supervised_trainer - INFO -     accuracy       : 0.9003703703703704
+2021-08-24 20:56:14,567 - supervised_trainer - INFO -     val_loss       : 0.4110446790854136
+2021-08-24 20:56:14,567 - supervised_trainer - INFO -     val_accuracy   : 0.8916666666666667
+2021-08-24 20:56:14,567 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:14,570 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:15,501 - supervised_trainer - INFO -     epoch          : 10
+2021-08-24 20:56:15,502 - supervised_trainer - INFO -     loss           : 0.3762861820062002
+2021-08-24 20:56:15,502 - supervised_trainer - INFO -     accuracy       : 0.9022222222222223
+2021-08-24 20:56:15,502 - supervised_trainer - INFO -     val_loss       : 0.39770095149676005
+2021-08-24 20:56:15,502 - supervised_trainer - INFO -     val_accuracy   : 0.8966666666666666
+2021-08-24 20:56:15,502 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:15,505 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:16,440 - supervised_trainer - INFO -     epoch          : 11
+2021-08-24 20:56:16,441 - supervised_trainer - INFO -     loss           : 0.36400480800204804
+2021-08-24 20:56:16,441 - supervised_trainer - INFO -     accuracy       : 0.9072222222222223
+2021-08-24 20:56:16,441 - supervised_trainer - INFO -     val_loss       : 0.3953683046499888
+2021-08-24 20:56:16,441 - supervised_trainer - INFO -     val_accuracy   : 0.8966666666666666
+2021-08-24 20:56:16,441 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:16,444 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:17,534 - supervised_trainer - INFO -     epoch          : 12
+2021-08-24 20:56:17,534 - supervised_trainer - INFO -     loss           : 0.36213006096857564
+2021-08-24 20:56:17,534 - supervised_trainer - INFO -     accuracy       : 0.9068518518518518
+2021-08-24 20:56:17,534 - supervised_trainer - INFO -     val_loss       : 0.3939185702800751
+2021-08-24 20:56:17,534 - supervised_trainer - INFO -     val_accuracy   : 0.8966666666666666
+2021-08-24 20:56:17,534 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:17,535 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:18,494 - supervised_trainer - INFO -     epoch          : 13
+2021-08-24 20:56:18,494 - supervised_trainer - INFO -     loss           : 0.3606541963418325
+2021-08-24 20:56:18,495 - supervised_trainer - INFO -     accuracy       : 0.9066666666666666
+2021-08-24 20:56:18,495 - supervised_trainer - INFO -     val_loss       : 0.3926641102631887
+2021-08-24 20:56:18,495 - supervised_trainer - INFO -     val_accuracy   : 0.8966666666666666
+2021-08-24 20:56:18,495 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:18,498 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:19,452 - supervised_trainer - INFO -     epoch          : 14
+2021-08-24 20:56:19,453 - supervised_trainer - INFO -     loss           : 0.3591283799983837
+2021-08-24 20:56:19,453 - supervised_trainer - INFO -     accuracy       : 0.9077777777777778
+2021-08-24 20:56:19,453 - supervised_trainer - INFO -     val_loss       : 0.3913629094759623
+2021-08-24 20:56:19,453 - supervised_trainer - INFO -     val_accuracy   : 0.8966666666666666
+2021-08-24 20:56:19,454 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:19,456 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:20,404 - supervised_trainer - INFO -     epoch          : 15
+2021-08-24 20:56:20,405 - supervised_trainer - INFO -     loss           : 0.3576176889737447
+2021-08-24 20:56:20,405 - supervised_trainer - INFO -     accuracy       : 0.9085185185185185
+2021-08-24 20:56:20,405 - supervised_trainer - INFO -     val_loss       : 0.3900424893697103
+2021-08-24 20:56:20,405 - supervised_trainer - INFO -     val_accuracy   : 0.8983333333333333
+2021-08-24 20:56:20,406 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:20,408 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:21,329 - supervised_trainer - INFO -     epoch          : 16
+2021-08-24 20:56:21,329 - supervised_trainer - INFO -     loss           : 0.35613394384030944
+2021-08-24 20:56:21,329 - supervised_trainer - INFO -     accuracy       : 0.9083333333333333
+2021-08-24 20:56:21,329 - supervised_trainer - INFO -     val_loss       : 0.3888408335049947
+2021-08-24 20:56:21,329 - supervised_trainer - INFO -     val_accuracy   : 0.8983333333333333
+2021-08-24 20:56:21,329 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:21,331 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:22,309 - supervised_trainer - INFO -     epoch          : 17
+2021-08-24 20:56:22,309 - supervised_trainer - INFO -     loss           : 0.354703012086727
+2021-08-24 20:56:22,309 - supervised_trainer - INFO -     accuracy       : 0.9083333333333333
+2021-08-24 20:56:22,310 - supervised_trainer - INFO -     val_loss       : 0.3874714994430542
+2021-08-24 20:56:22,310 - supervised_trainer - INFO -     val_accuracy   : 0.8966666666666666
+2021-08-24 20:56:22,310 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:22,312 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:23,299 - supervised_trainer - INFO -     epoch          : 18
+2021-08-24 20:56:23,299 - supervised_trainer - INFO -     loss           : 0.35315165007555926
+2021-08-24 20:56:23,299 - supervised_trainer - INFO -     accuracy       : 0.9077777777777778
+2021-08-24 20:56:23,299 - supervised_trainer - INFO -     val_loss       : 0.3864652049541473
+2021-08-24 20:56:23,300 - supervised_trainer - INFO -     val_accuracy   : 0.9
+2021-08-24 20:56:23,300 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:23,301 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:24,263 - supervised_trainer - INFO -     epoch          : 19
+2021-08-24 20:56:24,264 - supervised_trainer - INFO -     loss           : 0.3516403304647516
+2021-08-24 20:56:24,264 - supervised_trainer - INFO -     accuracy       : 0.9081481481481481
+2021-08-24 20:56:24,264 - supervised_trainer - INFO -     val_loss       : 0.38516493638356525
+2021-08-24 20:56:24,264 - supervised_trainer - INFO -     val_accuracy   : 0.8983333333333333
+2021-08-24 20:56:24,264 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:24,266 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:25,246 - supervised_trainer - INFO -     epoch          : 20
+2021-08-24 20:56:25,247 - supervised_trainer - INFO -     loss           : 0.3502233871044936
+2021-08-24 20:56:25,247 - supervised_trainer - INFO -     accuracy       : 0.9096296296296297
+2021-08-24 20:56:25,247 - supervised_trainer - INFO -     val_loss       : 0.3838897212346395
+2021-08-24 20:56:25,247 - supervised_trainer - INFO -     val_accuracy   : 0.9016666666666666
+2021-08-24 20:56:25,247 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:25,249 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:26,198 - supervised_trainer - INFO -     epoch          : 21
+2021-08-24 20:56:26,199 - supervised_trainer - INFO -     loss           : 0.3489894410857448
+2021-08-24 20:56:26,199 - supervised_trainer - INFO -     accuracy       : 0.9092592592592592
+2021-08-24 20:56:26,199 - supervised_trainer - INFO -     val_loss       : 0.38376452366511027
+2021-08-24 20:56:26,199 - supervised_trainer - INFO -     val_accuracy   : 0.9016666666666666
+2021-08-24 20:56:26,200 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:26,201 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:27,157 - supervised_trainer - INFO -     epoch          : 22
+2021-08-24 20:56:27,157 - supervised_trainer - INFO -     loss           : 0.348840364880032
+2021-08-24 20:56:27,157 - supervised_trainer - INFO -     accuracy       : 0.9094444444444445
+2021-08-24 20:56:27,158 - supervised_trainer - INFO -     val_loss       : 0.383662410179774
+2021-08-24 20:56:27,158 - supervised_trainer - INFO -     val_accuracy   : 0.9016666666666666
+2021-08-24 20:56:27,158 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:27,159 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:28,101 - supervised_trainer - INFO -     epoch          : 23
+2021-08-24 20:56:28,101 - supervised_trainer - INFO -     loss           : 0.3486842515733507
+2021-08-24 20:56:28,101 - supervised_trainer - INFO -     accuracy       : 0.9094444444444445
+2021-08-24 20:56:28,102 - supervised_trainer - INFO -     val_loss       : 0.38353858947753905
+2021-08-24 20:56:28,102 - supervised_trainer - INFO -     val_accuracy   : 0.9
+2021-08-24 20:56:28,102 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:28,105 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:29,064 - supervised_trainer - INFO -     epoch          : 24
+2021-08-24 20:56:29,065 - supervised_trainer - INFO -     loss           : 0.3485571505626043
+2021-08-24 20:56:29,065 - supervised_trainer - INFO -     accuracy       : 0.9094444444444445
+2021-08-24 20:56:29,065 - supervised_trainer - INFO -     val_loss       : 0.3834193058808645
+2021-08-24 20:56:29,065 - supervised_trainer - INFO -     val_accuracy   : 0.9016666666666666
+2021-08-24 20:56:29,066 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:29,068 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:30,023 - supervised_trainer - INFO -     epoch          : 25
+2021-08-24 20:56:30,024 - supervised_trainer - INFO -     loss           : 0.34839327794534186
+2021-08-24 20:56:30,024 - supervised_trainer - INFO -     accuracy       : 0.9092592592592592
+2021-08-24 20:56:30,024 - supervised_trainer - INFO -     val_loss       : 0.3832973682880402
+2021-08-24 20:56:30,024 - supervised_trainer - INFO -     val_accuracy   : 0.9016666666666666
+2021-08-24 20:56:30,025 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:30,027 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:30,981 - supervised_trainer - INFO -     epoch          : 26
+2021-08-24 20:56:30,981 - supervised_trainer - INFO -     loss           : 0.34824385356020043
+2021-08-24 20:56:30,982 - supervised_trainer - INFO -     accuracy       : 0.9094444444444445
+2021-08-24 20:56:30,982 - supervised_trainer - INFO -     val_loss       : 0.3831753488381704
+2021-08-24 20:56:30,982 - supervised_trainer - INFO -     val_accuracy   : 0.9016666666666666
+2021-08-24 20:56:30,983 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:30,986 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:31,964 - supervised_trainer - INFO -     epoch          : 27
+2021-08-24 20:56:31,965 - supervised_trainer - INFO -     loss           : 0.3480830878460849
+2021-08-24 20:56:31,965 - supervised_trainer - INFO -     accuracy       : 0.9092592592592592
+2021-08-24 20:56:31,965 - supervised_trainer - INFO -     val_loss       : 0.38303631663322446
+2021-08-24 20:56:31,965 - supervised_trainer - INFO -     val_accuracy   : 0.9016666666666666
+2021-08-24 20:56:31,965 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:31,967 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:32,920 - supervised_trainer - INFO -     epoch          : 28
+2021-08-24 20:56:32,921 - supervised_trainer - INFO -     loss           : 0.34794418860364845
+2021-08-24 20:56:32,921 - supervised_trainer - INFO -     accuracy       : 0.9094444444444445
+2021-08-24 20:56:32,921 - supervised_trainer - INFO -     val_loss       : 0.3829145435492198
+2021-08-24 20:56:32,921 - supervised_trainer - INFO -     val_accuracy   : 0.9016666666666666
+2021-08-24 20:56:32,921 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:32,922 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:33,862 - supervised_trainer - INFO -     epoch          : 29
+2021-08-24 20:56:33,862 - supervised_trainer - INFO -     loss           : 0.34778037194852474
+2021-08-24 20:56:33,862 - supervised_trainer - INFO -     accuracy       : 0.9094444444444445
+2021-08-24 20:56:33,862 - supervised_trainer - INFO -     val_loss       : 0.3827763895193736
+2021-08-24 20:56:33,862 - supervised_trainer - INFO -     val_accuracy   : 0.9016666666666666
+2021-08-24 20:56:33,862 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:33,864 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:34,808 - supervised_trainer - INFO -     epoch          : 30
+2021-08-24 20:56:34,809 - supervised_trainer - INFO -     loss           : 0.34764117576457837
+2021-08-24 20:56:34,809 - supervised_trainer - INFO -     accuracy       : 0.9092592592592592
+2021-08-24 20:56:34,809 - supervised_trainer - INFO -     val_loss       : 0.38262233654658
+2021-08-24 20:56:34,809 - supervised_trainer - INFO -     val_accuracy   : 0.9016666666666666
+2021-08-24 20:56:34,809 - supervised_trainer - INFO - Saving checkpoint: saved/models/mnist_logistic/0824_205602.361581/checkpoint.pth ...
+2021-08-24 20:56:34,811 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:35,746 - nni - INFO - Final result: {"validation_accuracy": 0.9016666412353516, "test_accuracy": 0.901199996471405, "default": 0.901199996471405}
+2021-08-24 20:56:35,747 - train - INFO - {'loss': 0.3768145111083984, 'accuracy': 0.901199996471405}

@@ -1,0 +1,57 @@
+{
+    "name": "mnist supervised",
+    "n_gpu": 1,
+    "supervised_arch": {
+        "type": "MLP",
+        "args": {
+            "input_dim": 784,
+            "hidden_dim": [100, 100],
+            "num_classes": 10
+        }
+    },
+    "supervised_data_loader": {
+        "type": "KerasMNISTDataLoader",
+        "args": {
+            "batch_size": 128,
+            "labeled_ratio": 0.10,
+            "shuffle": true,
+            "validation_split": 0.10,
+            "num_workers": 2,
+            "method": "supervised"
+            }
+    },
+    "supervised_optimizer": {
+        "type": "Adam",
+        "args": {
+            "lr": 0.001,
+            "weight_decay": 0,
+            "amsgrad": false 
+        }
+    },
+    "supervised_metrics": ["accuracy"],
+    "supervised_lr_scheduler": {
+        "type": "StepLR",
+        "args": {
+            "step_size": 30,
+            "gamma": 0.1
+        }
+    },
+    "loss_args":{
+    },
+    "supervised_trainer": {
+        "type": "Trainer",
+        "module_name": "trainer",
+        "epochs": 50,
+        "save_dir": "saved/",
+        "save_period": -1,
+        "verbosity": 2,
+        "monitor": "max val_accuracy",
+        "early_stop": 50,
+        "save_single_checkpoint": true,
+        "save_only_best": true,
+        "tensorboard": false,
+        "log_step": 50
+    },
+    "unsupervised_model_load_best": false,
+    "supervised_model_load_best": true
+}

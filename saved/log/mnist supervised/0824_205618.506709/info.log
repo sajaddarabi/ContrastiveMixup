@@ -1,0 +1,296 @@
+2021-08-24 20:56:18,923 - train - INFO - MLP(
+  (embeddings): EmbeddingGenerator()
+  (predictor): ModuleList(
+    (0): EmbeddingGenerator()
+    (1): Sequential(
+      (0): Linear(in_features=784, out_features=100, bias=True)
+      (1): ReLU()
+    )
+    (2): Sequential(
+      (0): Linear(in_features=100, out_features=100, bias=True)
+      (1): ReLU()
+    )
+    (3): Linear(in_features=100, out_features=10, bias=True)
+  )
+  (criterion_mixup): BCELoss()
+  (criterion_softmax): CrossEntropyLoss()
+)
+Trainable parameters: 89610
+2021-08-24 20:56:18,975 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2021-08-24 20:56:18,976 - faiss.loader - INFO - Loading faiss.
+2021-08-24 20:56:22,544 - supervised_trainer - INFO -     epoch          : 1
+2021-08-24 20:56:22,544 - supervised_trainer - INFO -     loss           : 1.4960317826271057
+2021-08-24 20:56:22,545 - supervised_trainer - INFO -     accuracy       : 0.6412962962962963
+2021-08-24 20:56:22,545 - supervised_trainer - INFO -     val_loss       : 0.6442915376027425
+2021-08-24 20:56:22,545 - supervised_trainer - INFO -     val_accuracy   : 0.8333333333333334
+2021-08-24 20:56:22,554 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:23,045 - supervised_trainer - INFO -     epoch          : 2
+2021-08-24 20:56:23,046 - supervised_trainer - INFO -     loss           : 0.4825576577363191
+2021-08-24 20:56:23,046 - supervised_trainer - INFO -     accuracy       : 0.8592592592592593
+2021-08-24 20:56:23,046 - supervised_trainer - INFO -     val_loss       : 0.3963488272825877
+2021-08-24 20:56:23,046 - supervised_trainer - INFO -     val_accuracy   : 0.8816666666666667
+2021-08-24 20:56:23,054 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:23,494 - supervised_trainer - INFO -     epoch          : 3
+2021-08-24 20:56:23,495 - supervised_trainer - INFO -     loss           : 0.35073720923176516
+2021-08-24 20:56:23,495 - supervised_trainer - INFO -     accuracy       : 0.8955555555555555
+2021-08-24 20:56:23,495 - supervised_trainer - INFO -     val_loss       : 0.3153852907816569
+2021-08-24 20:56:23,495 - supervised_trainer - INFO -     val_accuracy   : 0.9033333333333333
+2021-08-24 20:56:23,502 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:23,959 - supervised_trainer - INFO -     epoch          : 4
+2021-08-24 20:56:23,959 - supervised_trainer - INFO -     loss           : 0.2858276759253608
+2021-08-24 20:56:23,959 - supervised_trainer - INFO -     accuracy       : 0.9168518518518518
+2021-08-24 20:56:23,960 - supervised_trainer - INFO -     val_loss       : 0.2802653270959854
+2021-08-24 20:56:23,960 - supervised_trainer - INFO -     val_accuracy   : 0.915
+2021-08-24 20:56:23,966 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:24,431 - supervised_trainer - INFO -     epoch          : 5
+2021-08-24 20:56:24,431 - supervised_trainer - INFO -     loss           : 0.25579114984582974
+2021-08-24 20:56:24,431 - supervised_trainer - INFO -     accuracy       : 0.922037037037037
+2021-08-24 20:56:24,432 - supervised_trainer - INFO -     val_loss       : 0.26063329140345254
+2021-08-24 20:56:24,432 - supervised_trainer - INFO -     val_accuracy   : 0.92
+2021-08-24 20:56:24,439 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:24,900 - supervised_trainer - INFO -     epoch          : 6
+2021-08-24 20:56:24,900 - supervised_trainer - INFO -     loss           : 0.2200560881694158
+2021-08-24 20:56:24,900 - supervised_trainer - INFO -     accuracy       : 0.9353703703703704
+2021-08-24 20:56:24,900 - supervised_trainer - INFO -     val_loss       : 0.23681987762451173
+2021-08-24 20:56:24,900 - supervised_trainer - INFO -     val_accuracy   : 0.925
+2021-08-24 20:56:24,907 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:25,358 - supervised_trainer - INFO -     epoch          : 7
+2021-08-24 20:56:25,359 - supervised_trainer - INFO -     loss           : 0.19488280782545053
+2021-08-24 20:56:25,359 - supervised_trainer - INFO -     accuracy       : 0.9446296296296296
+2021-08-24 20:56:25,359 - supervised_trainer - INFO -     val_loss       : 0.22922659973303477
+2021-08-24 20:56:25,359 - supervised_trainer - INFO -     val_accuracy   : 0.9316666666666666
+2021-08-24 20:56:25,367 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:25,838 - supervised_trainer - INFO -     epoch          : 8
+2021-08-24 20:56:25,839 - supervised_trainer - INFO -     loss           : 0.17409149401717716
+2021-08-24 20:56:25,839 - supervised_trainer - INFO -     accuracy       : 0.9494444444444444
+2021-08-24 20:56:25,839 - supervised_trainer - INFO -     val_loss       : 0.21231643776098888
+2021-08-24 20:56:25,839 - supervised_trainer - INFO -     val_accuracy   : 0.935
+2021-08-24 20:56:25,846 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:26,325 - supervised_trainer - INFO -     epoch          : 9
+2021-08-24 20:56:26,326 - supervised_trainer - INFO -     loss           : 0.16113019746762736
+2021-08-24 20:56:26,326 - supervised_trainer - INFO -     accuracy       : 0.9518518518518518
+2021-08-24 20:56:26,326 - supervised_trainer - INFO -     val_loss       : 0.2030505488316218
+2021-08-24 20:56:26,326 - supervised_trainer - INFO -     val_accuracy   : 0.9333333333333333
+2021-08-24 20:56:26,800 - supervised_trainer - INFO -     epoch          : 10
+2021-08-24 20:56:26,800 - supervised_trainer - INFO -     loss           : 0.14385222223069932
+2021-08-24 20:56:26,800 - supervised_trainer - INFO -     accuracy       : 0.9574074074074074
+2021-08-24 20:56:26,801 - supervised_trainer - INFO -     val_loss       : 0.1936810427904129
+2021-08-24 20:56:26,801 - supervised_trainer - INFO -     val_accuracy   : 0.9383333333333334
+2021-08-24 20:56:26,808 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:27,275 - supervised_trainer - INFO -     epoch          : 11
+2021-08-24 20:56:27,275 - supervised_trainer - INFO -     loss           : 0.12631626828953071
+2021-08-24 20:56:27,275 - supervised_trainer - INFO -     accuracy       : 0.9633333333333334
+2021-08-24 20:56:27,275 - supervised_trainer - INFO -     val_loss       : 0.18638141810894013
+2021-08-24 20:56:27,275 - supervised_trainer - INFO -     val_accuracy   : 0.9433333333333334
+2021-08-24 20:56:27,283 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:27,770 - supervised_trainer - INFO -     epoch          : 12
+2021-08-24 20:56:27,770 - supervised_trainer - INFO -     loss           : 0.11464451964254732
+2021-08-24 20:56:27,770 - supervised_trainer - INFO -     accuracy       : 0.967037037037037
+2021-08-24 20:56:27,770 - supervised_trainer - INFO -     val_loss       : 0.1892054408788681
+2021-08-24 20:56:27,771 - supervised_trainer - INFO -     val_accuracy   : 0.9416666666666667
+2021-08-24 20:56:28,232 - supervised_trainer - INFO -     epoch          : 13
+2021-08-24 20:56:28,233 - supervised_trainer - INFO -     loss           : 0.09683226983856272
+2021-08-24 20:56:28,233 - supervised_trainer - INFO -     accuracy       : 0.9727777777777777
+2021-08-24 20:56:28,233 - supervised_trainer - INFO -     val_loss       : 0.1743081498146057
+2021-08-24 20:56:28,233 - supervised_trainer - INFO -     val_accuracy   : 0.9466666666666667
+2021-08-24 20:56:28,241 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:28,725 - supervised_trainer - INFO -     epoch          : 14
+2021-08-24 20:56:28,726 - supervised_trainer - INFO -     loss           : 0.08824208676815033
+2021-08-24 20:56:28,726 - supervised_trainer - INFO -     accuracy       : 0.9761111111111112
+2021-08-24 20:56:28,726 - supervised_trainer - INFO -     val_loss       : 0.18586292783419292
+2021-08-24 20:56:28,726 - supervised_trainer - INFO -     val_accuracy   : 0.9383333333333334
+2021-08-24 20:56:29,279 - supervised_trainer - INFO -     epoch          : 15
+2021-08-24 20:56:29,279 - supervised_trainer - INFO -     loss           : 0.08002147224214341
+2021-08-24 20:56:29,280 - supervised_trainer - INFO -     accuracy       : 0.9781481481481481
+2021-08-24 20:56:29,280 - supervised_trainer - INFO -     val_loss       : 0.17897018432617187
+2021-08-24 20:56:29,280 - supervised_trainer - INFO -     val_accuracy   : 0.9366666666666666
+2021-08-24 20:56:29,769 - supervised_trainer - INFO -     epoch          : 16
+2021-08-24 20:56:29,770 - supervised_trainer - INFO -     loss           : 0.06991571452882554
+2021-08-24 20:56:29,770 - supervised_trainer - INFO -     accuracy       : 0.982037037037037
+2021-08-24 20:56:29,770 - supervised_trainer - INFO -     val_loss       : 0.17029263933499655
+2021-08-24 20:56:29,770 - supervised_trainer - INFO -     val_accuracy   : 0.9416666666666667
+2021-08-24 20:56:30,255 - supervised_trainer - INFO -     epoch          : 17
+2021-08-24 20:56:30,256 - supervised_trainer - INFO -     loss           : 0.061478935386295674
+2021-08-24 20:56:30,256 - supervised_trainer - INFO -     accuracy       : 0.9848148148148148
+2021-08-24 20:56:30,256 - supervised_trainer - INFO -     val_loss       : 0.168808051943779
+2021-08-24 20:56:30,256 - supervised_trainer - INFO -     val_accuracy   : 0.9433333333333334
+2021-08-24 20:56:30,726 - supervised_trainer - INFO -     epoch          : 18
+2021-08-24 20:56:30,726 - supervised_trainer - INFO -     loss           : 0.05345983540570295
+2021-08-24 20:56:30,726 - supervised_trainer - INFO -     accuracy       : 0.9890740740740741
+2021-08-24 20:56:30,726 - supervised_trainer - INFO -     val_loss       : 0.1749391758441925
+2021-08-24 20:56:30,726 - supervised_trainer - INFO -     val_accuracy   : 0.9416666666666667
+2021-08-24 20:56:31,186 - supervised_trainer - INFO -     epoch          : 19
+2021-08-24 20:56:31,187 - supervised_trainer - INFO -     loss           : 0.04564981371164322
+2021-08-24 20:56:31,187 - supervised_trainer - INFO -     accuracy       : 0.9901851851851852
+2021-08-24 20:56:31,187 - supervised_trainer - INFO -     val_loss       : 0.1812362656990687
+2021-08-24 20:56:31,187 - supervised_trainer - INFO -     val_accuracy   : 0.9433333333333334
+2021-08-24 20:56:31,675 - supervised_trainer - INFO -     epoch          : 20
+2021-08-24 20:56:31,675 - supervised_trainer - INFO -     loss           : 0.043138673785660005
+2021-08-24 20:56:31,675 - supervised_trainer - INFO -     accuracy       : 0.9916666666666667
+2021-08-24 20:56:31,676 - supervised_trainer - INFO -     val_loss       : 0.17033641666173935
+2021-08-24 20:56:31,676 - supervised_trainer - INFO -     val_accuracy   : 0.9466666666666667
+2021-08-24 20:56:31,683 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:32,142 - supervised_trainer - INFO -     epoch          : 21
+2021-08-24 20:56:32,143 - supervised_trainer - INFO -     loss           : 0.03475328507660716
+2021-08-24 20:56:32,143 - supervised_trainer - INFO -     accuracy       : 0.9938888888888889
+2021-08-24 20:56:32,143 - supervised_trainer - INFO -     val_loss       : 0.18418554037809373
+2021-08-24 20:56:32,143 - supervised_trainer - INFO -     val_accuracy   : 0.9383333333333334
+2021-08-24 20:56:32,600 - supervised_trainer - INFO -     epoch          : 22
+2021-08-24 20:56:32,601 - supervised_trainer - INFO -     loss           : 0.03183027056563232
+2021-08-24 20:56:32,601 - supervised_trainer - INFO -     accuracy       : 0.9938888888888889
+2021-08-24 20:56:32,601 - supervised_trainer - INFO -     val_loss       : 0.18142591655254364
+2021-08-24 20:56:32,601 - supervised_trainer - INFO -     val_accuracy   : 0.9433333333333334
+2021-08-24 20:56:33,032 - supervised_trainer - INFO -     epoch          : 23
+2021-08-24 20:56:33,033 - supervised_trainer - INFO -     loss           : 0.02633682333829778
+2021-08-24 20:56:33,033 - supervised_trainer - INFO -     accuracy       : 0.9977777777777778
+2021-08-24 20:56:33,033 - supervised_trainer - INFO -     val_loss       : 0.18423437158266703
+2021-08-24 20:56:33,033 - supervised_trainer - INFO -     val_accuracy   : 0.9466666666666667
+2021-08-24 20:56:33,038 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:33,499 - supervised_trainer - INFO -     epoch          : 24
+2021-08-24 20:56:33,500 - supervised_trainer - INFO -     loss           : 0.023068524601144922
+2021-08-24 20:56:33,500 - supervised_trainer - INFO -     accuracy       : 0.9977777777777778
+2021-08-24 20:56:33,500 - supervised_trainer - INFO -     val_loss       : 0.18214302798112234
+2021-08-24 20:56:33,500 - supervised_trainer - INFO -     val_accuracy   : 0.9433333333333334
+2021-08-24 20:56:33,965 - supervised_trainer - INFO -     epoch          : 25
+2021-08-24 20:56:33,965 - supervised_trainer - INFO -     loss           : 0.020936557371859198
+2021-08-24 20:56:33,966 - supervised_trainer - INFO -     accuracy       : 0.9979629629629629
+2021-08-24 20:56:33,966 - supervised_trainer - INFO -     val_loss       : 0.1849455956617991
+2021-08-24 20:56:33,966 - supervised_trainer - INFO -     val_accuracy   : 0.9433333333333334
+2021-08-24 20:56:34,432 - supervised_trainer - INFO -     epoch          : 26
+2021-08-24 20:56:34,432 - supervised_trainer - INFO -     loss           : 0.017709956243634223
+2021-08-24 20:56:34,432 - supervised_trainer - INFO -     accuracy       : 0.9987037037037036
+2021-08-24 20:56:34,433 - supervised_trainer - INFO -     val_loss       : 0.19061385631561278
+2021-08-24 20:56:34,433 - supervised_trainer - INFO -     val_accuracy   : 0.9433333333333334
+2021-08-24 20:56:34,900 - supervised_trainer - INFO -     epoch          : 27
+2021-08-24 20:56:34,900 - supervised_trainer - INFO -     loss           : 0.016076801973912452
+2021-08-24 20:56:34,900 - supervised_trainer - INFO -     accuracy       : 0.9988888888888889
+2021-08-24 20:56:34,900 - supervised_trainer - INFO -     val_loss       : 0.1869110616048177
+2021-08-24 20:56:34,900 - supervised_trainer - INFO -     val_accuracy   : 0.9483333333333334
+2021-08-24 20:56:34,908 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:35,364 - supervised_trainer - INFO -     epoch          : 28
+2021-08-24 20:56:35,365 - supervised_trainer - INFO -     loss           : 0.014212671475553953
+2021-08-24 20:56:35,365 - supervised_trainer - INFO -     accuracy       : 0.9990740740740741
+2021-08-24 20:56:35,365 - supervised_trainer - INFO -     val_loss       : 0.1923580022652944
+2021-08-24 20:56:35,365 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:35,372 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:35,822 - supervised_trainer - INFO -     epoch          : 29
+2021-08-24 20:56:35,822 - supervised_trainer - INFO -     loss           : 0.012783724345542766
+2021-08-24 20:56:35,822 - supervised_trainer - INFO -     accuracy       : 0.9996296296296296
+2021-08-24 20:56:35,822 - supervised_trainer - INFO -     val_loss       : 0.19891008734703064
+2021-08-24 20:56:35,822 - supervised_trainer - INFO -     val_accuracy   : 0.94
+2021-08-24 20:56:36,288 - supervised_trainer - INFO -     epoch          : 30
+2021-08-24 20:56:36,289 - supervised_trainer - INFO -     loss           : 0.015757413964580608
+2021-08-24 20:56:36,289 - supervised_trainer - INFO -     accuracy       : 0.9975925925925926
+2021-08-24 20:56:36,289 - supervised_trainer - INFO -     val_loss       : 0.19910077174504598
+2021-08-24 20:56:36,289 - supervised_trainer - INFO -     val_accuracy   : 0.9466666666666667
+2021-08-24 20:56:36,761 - supervised_trainer - INFO -     epoch          : 31
+2021-08-24 20:56:36,762 - supervised_trainer - INFO -     loss           : 0.009640053735563049
+2021-08-24 20:56:36,762 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:36,762 - supervised_trainer - INFO -     val_loss       : 0.19183592061201732
+2021-08-24 20:56:36,762 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:36,769 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:37,230 - supervised_trainer - INFO -     epoch          : 32
+2021-08-24 20:56:37,230 - supervised_trainer - INFO -     loss           : 0.008528081680889484
+2021-08-24 20:56:37,230 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:37,231 - supervised_trainer - INFO -     val_loss       : 0.19211414009332656
+2021-08-24 20:56:37,231 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:37,238 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:37,699 - supervised_trainer - INFO -     epoch          : 33
+2021-08-24 20:56:37,700 - supervised_trainer - INFO -     loss           : 0.008323944353464025
+2021-08-24 20:56:37,700 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:37,700 - supervised_trainer - INFO -     val_loss       : 0.19269060293833415
+2021-08-24 20:56:37,700 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:37,708 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:38,174 - supervised_trainer - INFO -     epoch          : 34
+2021-08-24 20:56:38,175 - supervised_trainer - INFO -     loss           : 0.008127511908403702
+2021-08-24 20:56:38,175 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:38,175 - supervised_trainer - INFO -     val_loss       : 0.19305617352326712
+2021-08-24 20:56:38,175 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:38,183 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:38,644 - supervised_trainer - INFO -     epoch          : 35
+2021-08-24 20:56:38,645 - supervised_trainer - INFO -     loss           : 0.00795192506060832
+2021-08-24 20:56:38,645 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:38,645 - supervised_trainer - INFO -     val_loss       : 0.19351297318935395
+2021-08-24 20:56:38,645 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:38,652 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:39,108 - supervised_trainer - INFO -     epoch          : 36
+2021-08-24 20:56:39,108 - supervised_trainer - INFO -     loss           : 0.007814428440674587
+2021-08-24 20:56:39,108 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:39,108 - supervised_trainer - INFO -     val_loss       : 0.19321336378653844
+2021-08-24 20:56:39,108 - supervised_trainer - INFO -     val_accuracy   : 0.9516666666666667
+2021-08-24 20:56:39,116 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:39,588 - supervised_trainer - INFO -     epoch          : 37
+2021-08-24 20:56:39,589 - supervised_trainer - INFO -     loss           : 0.007688577899502383
+2021-08-24 20:56:39,589 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:39,589 - supervised_trainer - INFO -     val_loss       : 0.19413854281107584
+2021-08-24 20:56:39,589 - supervised_trainer - INFO -     val_accuracy   : 0.9516666666666667
+2021-08-24 20:56:39,596 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:40,062 - supervised_trainer - INFO -     epoch          : 38
+2021-08-24 20:56:40,062 - supervised_trainer - INFO -     loss           : 0.007556367787635989
+2021-08-24 20:56:40,062 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:40,062 - supervised_trainer - INFO -     val_loss       : 0.1940068746606509
+2021-08-24 20:56:40,063 - supervised_trainer - INFO -     val_accuracy   : 0.9516666666666667
+2021-08-24 20:56:40,070 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:40,517 - supervised_trainer - INFO -     epoch          : 39
+2021-08-24 20:56:40,518 - supervised_trainer - INFO -     loss           : 0.007443937783439954
+2021-08-24 20:56:40,518 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:40,518 - supervised_trainer - INFO -     val_loss       : 0.19460735122362774
+2021-08-24 20:56:40,518 - supervised_trainer - INFO -     val_accuracy   : 0.9516666666666667
+2021-08-24 20:56:40,525 - supervised_trainer - INFO - Saving current best: model_best.pth ...
+2021-08-24 20:56:40,974 - supervised_trainer - INFO -     epoch          : 40
+2021-08-24 20:56:40,975 - supervised_trainer - INFO -     loss           : 0.007310021206460618
+2021-08-24 20:56:40,975 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:40,975 - supervised_trainer - INFO -     val_loss       : 0.1951620997985204
+2021-08-24 20:56:40,975 - supervised_trainer - INFO -     val_accuracy   : 0.9483333333333334
+2021-08-24 20:56:41,438 - supervised_trainer - INFO -     epoch          : 41
+2021-08-24 20:56:41,438 - supervised_trainer - INFO -     loss           : 0.007208560145701523
+2021-08-24 20:56:41,438 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:41,439 - supervised_trainer - INFO -     val_loss       : 0.19539004425207773
+2021-08-24 20:56:41,439 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:41,939 - supervised_trainer - INFO -     epoch          : 42
+2021-08-24 20:56:41,940 - supervised_trainer - INFO -     loss           : 0.0071073980677734926
+2021-08-24 20:56:41,940 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:41,940 - supervised_trainer - INFO -     val_loss       : 0.19581950883070628
+2021-08-24 20:56:41,940 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:42,505 - supervised_trainer - INFO -     epoch          : 43
+2021-08-24 20:56:42,506 - supervised_trainer - INFO -     loss           : 0.007025972684776342
+2021-08-24 20:56:42,506 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:42,506 - supervised_trainer - INFO -     val_loss       : 0.19679263631502789
+2021-08-24 20:56:42,506 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:42,961 - supervised_trainer - INFO -     epoch          : 44
+2021-08-24 20:56:42,961 - supervised_trainer - INFO -     loss           : 0.006903967366864284
+2021-08-24 20:56:42,961 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:42,961 - supervised_trainer - INFO -     val_loss       : 0.19720716089010237
+2021-08-24 20:56:42,962 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:43,420 - supervised_trainer - INFO -     epoch          : 45
+2021-08-24 20:56:43,421 - supervised_trainer - INFO -     loss           : 0.006800054346245748
+2021-08-24 20:56:43,421 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:43,421 - supervised_trainer - INFO -     val_loss       : 0.1967457373936971
+2021-08-24 20:56:43,421 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:43,894 - supervised_trainer - INFO -     epoch          : 46
+2021-08-24 20:56:43,894 - supervised_trainer - INFO -     loss           : 0.006706599147507438
+2021-08-24 20:56:43,894 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:43,894 - supervised_trainer - INFO -     val_loss       : 0.19718230346838633
+2021-08-24 20:56:43,894 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:44,370 - supervised_trainer - INFO -     epoch          : 47
+2021-08-24 20:56:44,371 - supervised_trainer - INFO -     loss           : 0.0066337303844866925
+2021-08-24 20:56:44,371 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:44,371 - supervised_trainer - INFO -     val_loss       : 0.19781253616015115
+2021-08-24 20:56:44,371 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:44,843 - supervised_trainer - INFO -     epoch          : 48
+2021-08-24 20:56:44,843 - supervised_trainer - INFO -     loss           : 0.006547687390336284
+2021-08-24 20:56:44,843 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:44,843 - supervised_trainer - INFO -     val_loss       : 0.19793615162372588
+2021-08-24 20:56:44,843 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:45,308 - supervised_trainer - INFO -     epoch          : 49
+2021-08-24 20:56:45,309 - supervised_trainer - INFO -     loss           : 0.006459092765494629
+2021-08-24 20:56:45,309 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:45,309 - supervised_trainer - INFO -     val_loss       : 0.19838097701470056
+2021-08-24 20:56:45,309 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:45,776 - supervised_trainer - INFO -     epoch          : 50
+2021-08-24 20:56:45,776 - supervised_trainer - INFO -     loss           : 0.006370922113182368
+2021-08-24 20:56:45,777 - supervised_trainer - INFO -     accuracy       : 1.0
+2021-08-24 20:56:45,777 - supervised_trainer - INFO -     val_loss       : 0.19951975464820862
+2021-08-24 20:56:45,777 - supervised_trainer - INFO -     val_accuracy   : 0.95
+2021-08-24 20:56:46,397 - nni - INFO - Final result: {"validation_accuracy": 0.949999988079071, "test_accuracy": 0.9368000030517578, "default": 0.9368000030517578}
+2021-08-24 20:56:46,398 - train - INFO - {'loss': 0.28707869091033933, 'accuracy': 0.9368000030517578}

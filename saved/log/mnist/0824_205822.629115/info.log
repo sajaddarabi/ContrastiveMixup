@@ -1,0 +1,24 @@
+2021-08-24 20:58:23,074 - train - INFO - AE(
+  (embeddings): EmbeddingGenerator()
+  (encoder): ModuleList(
+    (0): EmbeddingGenerator()
+    (1): Sequential(
+      (0): Linear(in_features=784, out_features=784, bias=True)
+      (1): ReLU()
+    )
+  )
+  (projection_layer): Sequential(
+    (0): Linear(in_features=784, out_features=784, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=784, out_features=784, bias=True)
+  )
+  (contrast_loss): SupConLoss()
+  (bce_loss): BCELoss()
+  (decoder): Sequential()
+  (cont_net): Sequential(
+    (0): Linear(in_features=784, out_features=784, bias=True)
+  )
+)
+Trainable parameters: 2461760
+2021-08-24 20:58:23,131 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2021-08-24 20:58:23,132 - faiss.loader - INFO - Loading faiss.
