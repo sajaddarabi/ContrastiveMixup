@@ -230,7 +230,7 @@ class MLP(BaseModel):
             loss['nll'] = self.criterion_softmax(logits, target.long())
 
         if utarget_reweighted is not None:
-            loses = unlabeled_samples_weight * self.criterion_mixup(F.softmax(ulogits), target_reweighted)
+            losses = unlabeled_samples_weight * self.criterion_mixup(F.softmax(ulogits), utarget_reweighted)
             if self.weight is not None:
                 weights = torch.ones(losses.shape[0], device=device)
                 for i, w in enumerate(self.weight):
