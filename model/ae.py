@@ -398,7 +398,7 @@ class AE(BaseModel):
                 z_m = z_proj_mixup[lambda_indices] # - order indices
                 z_m = torch.unsqueeze(z_m, dim=1)
                 z_proj = torch.unsqueeze(z_proj, dim=1)
-                zs = torch.cat([z_proj, z_proj_mixup], dim=1)
+                zs = torch.cat([z_proj, z_m], dim=1)
 
                 if weights is not None:
                     weights_mixup = mixup_full_indices(weights, lambda_indices, one_minus_lambda_indices, lam)
